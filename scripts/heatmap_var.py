@@ -38,8 +38,10 @@ max_frac_bits = folders[-1][1]
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+import sys
 
-from score import calculate_score_from_folder
+from scripts.score import calculate_score_from_folder
 
 #total_scores = [[calculate_score_from_folder(int_bits, frac_bits) for frac_bits in range(min_frac_bits, max_frac_bits+1)] for int_bits in range(min_int_bits, max_int_bits+1)]
 print("total scores")
@@ -80,7 +82,7 @@ fig.tight_layout()
 
 plt.show()
 
-
+plt.savefig('test.png')
 
 
 
