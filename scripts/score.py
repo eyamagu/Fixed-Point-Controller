@@ -1,9 +1,10 @@
 import pandas as pd
 import numpy as np
-
+import os
+import sys
 import glob
 
-import traj_panda as traj_panda
+import scripts.traj_panda as traj_panda
 
 PARENT_DIRECTORY = 'exp/05-16'
 
